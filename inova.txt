@@ -1,0 +1,10 @@
+
+   <!--inovaçao-->  
+    <div class="experiencia" style="background-color: #f0fff0;"> <!-- Verde claro -->
+        <img class="logo" src="Assets/inovaçao.jfif" alt="Logo Empresa 4"> <!-- Placeholder da logo -->
+        <div>
+            <div class="empresa">Inovação Tecnologia</div>
+            <div class="cargo">Analista de Suporte Jr.</div>
+            <div class="periodo">De 20 de Maio, até o atual momento </div>
+        </div>
+    </div>
