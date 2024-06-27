@@ -47,6 +47,10 @@ header {
 .periodo {
     color: #555; /* Um tom ainda mais escuro para melhor contraste */
 }
+.funcoes {
+    color: #666; /* Um tom ainda mais escuro para melhor contraste */
+    margin-top: 10px;
+}
 
 #seta {
     position: absolute;
