@@ -60,6 +60,10 @@ header {
     cursor: pointer;
 }
 
+#logoempresa {
+    height: 45px;
+}
+
 /* Media query para dispositivos móveis */
 @media screen and (max-width: 600px) {
     header {
@@ -80,5 +84,8 @@ header {
         left: 4%;
         top: 9%;
         cursor: pointer;
+    }
+    #logoempresa {
+        height: 50px;
     }
 }
