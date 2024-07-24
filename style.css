@@ -26,6 +26,7 @@ header {
     transition: transform 0.3s ease-in-out;
     display: flex; /* Para alinhar os elementos horizontalmente */
     align-items: center; /* Para alinhar verticalmente */
+    overflow: hidden; /* Esconde qualquer conteúdo que exceda o tamanho do elemento */
 }
 .experiencia:hover {
     transform: scale(1.05);
