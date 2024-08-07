@@ -29,6 +29,7 @@ header {
     display: flex; /* Para alinhar os elementos horizontalmente */
     align-items: center; /* Para alinhar verticalmente */
     overflow: hidden; /* Esconde qualquer conteúdo que exceda o tamanho do elemento */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas pequenas */
 }
 
 .experiencia:hover {
@@ -82,6 +83,7 @@ header {
     .experiencia {
         flex-direction: column; /* Altera a direção dos elementos para empilhados */
         text-align: center; /* Centraliza o texto */
+        padding: 15px; /* Ajusta o padding */
     }
 
     .logo {
@@ -114,6 +116,7 @@ header {
         padding: 15px; /* Ajusta o padding para notebooks */
         margin-bottom: 15px; /* Ajusta o espaçamento inferior */
         flex-direction: row; /* Mantém os elementos alinhados horizontalmente */
+        text-align: left; /* Alinha o texto à esquerda */
     }
 
     .logo {
@@ -137,5 +140,43 @@ header {
 
     #logoempresa {
         height: 40px; /* Ajusta a altura do logo para notebooks */
+    }
+}
+
+/* Media query para telas maiores (desktops) */
+@media screen and (min-width: 1025px) {
+    header {
+        padding: 20px;
+    }
+
+    .experiencias {
+        margin: 40px; /* Ajusta a margem para telas grandes */
+    }
+
+    .experiencia {
+        padding: 20px; /* Ajusta o padding para telas grandes */
+        margin-bottom: 20px; /* Ajusta o espaçamento inferior */
+        flex-direction: row; /* Mantém os elementos alinhados horizontalmente */
+    }
+
+    .logo {
+        width: 50px; /* Ajusta o tamanho do logo para telas grandes */
+        margin-right: 20px; /* Ajusta o espaçamento entre o logo e o texto */
+    }
+
+    .empresa {
+        font-size: 20px; /* Mantém o tamanho da fonte para telas grandes */
+    }
+
+    .cargo, .periodo, .funcoes {
+        font-size: 16px; /* Ajusta o tamanho da fonte para telas grandes */
+    }
+
+    #seta {
+        height: 50px; /* Mantém a altura do ícone para telas grandes */
+    }
+
+    #logoempresa {
+        height: 45px; /* Mantém a altura do logo para telas grandes */
     }
 }
