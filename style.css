@@ -12,7 +12,7 @@ header {
     text-align: center;
 }
 
-/* Estilos das experiências */
+/* Estilos gerais para a seção de experiências */
 .experiencias {
     margin: 20px;
 }
@@ -23,12 +23,12 @@ header {
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
-    background-color: #e6f7ff; /* Azul claro */
+    background-color: #e6f7ff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    display: flex; /* Para alinhar os elementos horizontalmente */
-    align-items: center; /* Para alinhar verticalmente */
-    overflow: hidden; /* Esconde qualquer conteúdo que exceda o tamanho do elemento */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 .experiencia:hover {
@@ -36,28 +36,28 @@ header {
 }
 
 .logo {
-    width: 50px; /* Ajuste o tamanho conforme necessário */
-    margin-right: 20px; /* Espaçamento entre o logo e o texto */
+    width: 50px;
+    margin-right: 20px;
 }
 
 .empresa {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
     color: #333;
 }
 
 .cargo {
-    color: #444; /* Um tom mais escuro para melhor contraste */
+    color: #444;
     margin-bottom: 10px;
 }
 
 .periodo {
-    color: #555; /* Um tom ainda mais escuro para melhor contraste */
+    color: #555;
 }
 
 .funcoes {
-    color: #666; /* Um tom ainda mais escuro para melhor contraste */
+    color: #666;
     margin-top: 10px;
 }
 
@@ -77,16 +77,27 @@ header {
 @media screen and (max-width: 600px) {
     header {
         padding: 10px;
+        font-size: 16px; /* Ajuste o tamanho da fonte para caber em telas menores */
     }
 
     .experiencia {
-        flex-direction: column; /* Altera a direção dos elementos para empilhados */
-        text-align: center; /* Centraliza o texto */
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
     }
 
     .logo {
-        margin-right: 0; /* Remove o espaçamento entre o logo e o texto */
-        margin-bottom: 10px; /* Adiciona espaçamento abaixo do logo */
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 40px; /* Reduz o tamanho do logo */
+    }
+
+    .empresa {
+        font-size: 16px; /* Diminuir para telas menores */
+    }
+
+    .cargo, .periodo, .funcoes {
+        font-size: 14px; /* Fonte menor para celulares */
     }
 
     #seta {
@@ -96,46 +107,116 @@ header {
     }
 
     #logoempresa {
-        height: 50px;
+        height: 40px;
     }
 }
 
-/* Media query para notebooks */
+/* Media query para tablets e notebooks pequenos */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     header {
         padding: 15px;
-    }
-
-    .experiencias {
-        margin: 30px; /* Ajusta a margem para notebooks */
+        font-size: 18px;
     }
 
     .experiencia {
-        padding: 15px; /* Ajusta o padding para notebooks */
-        margin-bottom: 15px; /* Ajusta o espaçamento inferior */
-        flex-direction: row; /* Mantém os elementos alinhados horizontalmente */
+        flex-direction: row;
+        padding: 15px;
     }
 
     .logo {
-        width: 40px; /* Ajusta o tamanho do logo para notebooks */
-        margin-right: 15px; /* Ajusta o espaçamento entre o logo e o texto */
+        width: 45px;
+        margin-right: 15px;
     }
 
     .empresa {
-        font-size: 18px; /* Ajusta o tamanho da fonte para notebooks */
+        font-size: 18px;
     }
 
     .cargo, .periodo, .funcoes {
-        font-size: 14px; /* Ajusta o tamanho da fonte para notebooks */
+        font-size: 16px;
     }
 
     #seta {
-        height: 40px; /* Ajusta a altura do ícone para notebooks */
+        height: 40px;
+        left: 4%;
+        top: 6%;
+    }
+
+    #logoempresa {
+        height: 40px;
+    }
+}
+
+/* Media query para desktops */
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+    header {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .experiencia {
+        flex-direction: row;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    .empresa {
+        font-size: 18px; /* Mantém tamanho moderado em desktops */
+    }
+
+    .cargo, .periodo, .funcoes {
+        font-size: 16px;
+    }
+
+    #seta {
+        height: 50px;
+        left: 5%;
+        top: 3%;
+    }
+
+    #logoempresa {
+        height: 45px;
+    }
+}
+
+/* Media query para desktops grandes */
+@media screen and (min-width: 1401px) {
+    header {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .experiencia {
+        flex-direction: row;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .logo {
+        width: 45px;
+        margin-right: 15px;
+    }
+
+    .empresa {
+        font-size: 18px; /* Evita textos muito grandes em telas grandes */
+    }
+
+    .cargo, .periodo, .funcoes {
+        font-size: 16px;
+    }
+
+    #seta {
+        height: 40px;
         left: 4%;
         top: 4%;
     }
 
     #logoempresa {
-        height: 40px; /* Ajusta a altura do logo para notebooks */
+        height: 45px;
     }
 }
