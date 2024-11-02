@@ -109,6 +109,10 @@ header {
     #logoempresa {
         height: 40px;
     }
+
+    ul {
+        list-style-type: none;
+      }
 }
 
 /* Media query para tablets e notebooks pequenos */
@@ -219,4 +223,6 @@ header {
     #logoempresa {
         height: 45px;
     }
+    
+    
 }
