@@ -83,87 +83,16 @@ body {
 .topo {
     max-width: 780px;
     margin: 0 auto;
-    padding: 96px 24px 48px;
+    padding: 96px 24px 40px;
     text-align: center;
-}
-
-.topo__tag {
-    font-family: var(--font-mono);
-    font-size: 12px;
-    letter-spacing: 0.18em;
-    color: var(--line);
-    margin-bottom: 14px;
 }
 
 .topo__titulo {
     font-family: var(--font-display);
     font-weight: 700;
     font-size: clamp(28px, 4.5vw, 42px);
-    margin: 0 0 14px;
+    margin: 0;
     letter-spacing: -0.01em;
-}
-
-.topo__subtitulo {
-    font-size: 15px;
-    line-height: 1.6;
-    color: var(--ink-soft);
-    max-width: 560px;
-    margin: 0 auto 32px;
-}
-
-.topo__stats {
-    display: inline-flex;
-    gap: 0;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    background: var(--card);
-    overflow: hidden;
-}
-
-.stat {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    padding: 14px 24px;
-    border-right: 1px solid var(--border);
-}
-.stat:last-child {
-    border-right: none;
-}
-
-.stat__label {
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-}
-
-.stat__valor {
-    font-family: var(--font-mono);
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--ink);
-}
-
-.stat__valor--online {
-    color: var(--online);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-.stat__valor--online::before {
-    content: '';
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: var(--online);
-    animation: pulso 1.8s ease-in-out infinite;
-}
-
-@keyframes pulso {
-    0%, 100% { box-shadow: 0 0 0 0 var(--online-soft); }
-    50% { box-shadow: 0 0 0 6px var(--online-soft); }
 }
 
 /* ============================================================
@@ -370,21 +299,7 @@ body {
 
 @media screen and (max-width: 480px) {
     .topo {
-        padding: 80px 16px 36px;
-    }
-    .topo__stats {
-        flex-direction: column;
-        width: 100%;
-    }
-    .stat {
-        border-right: none;
-        border-bottom: 1px solid var(--border);
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .stat:last-child {
-        border-bottom: none;
+        padding: 80px 16px 32px;
     }
     .rede {
         padding: 0 12px 32px;
