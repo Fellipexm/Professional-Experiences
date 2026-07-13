@@ -18,24 +18,7 @@
 </a>
 
 <header class="topo">
-    <div class="topo__tag">LOG&nbsp;DE&nbsp;INFRAESTRUTURA</div>
     <h1 class="topo__titulo">Minhas Experiências Profissionais</h1>
-    <p class="topo__subtitulo">Trajetória em redes, infraestrutura e segurança da informação — organizada como um histórico de rede, do nó mais antigo ao status atual.</p>
-
-    <div class="topo__stats">
-        <div class="stat">
-            <span class="stat__label">nós registrados</span>
-            <span class="stat__valor" id="stat-nos">04</span>
-        </div>
-        <div class="stat">
-            <span class="stat__label">tempo em operação</span>
-            <span class="stat__valor" id="stat-uptime">—</span>
-        </div>
-        <div class="stat">
-            <span class="stat__label">status atual</span>
-            <span class="stat__valor stat__valor--online">ONLINE</span>
-        </div>
-    </div>
 </header>
 
 <main class="rede" id="rede">
@@ -190,18 +173,6 @@
             botao.setAttribute('aria-expanded', String(!aberto));
         });
     });
-
-    // Uptime calculado a partir do nó mais antigo até hoje
-    var inicio = new Date(2023, 5, 1); // junho/2023
-    var hoje = new Date();
-    var meses = (hoje.getFullYear() - inicio.getFullYear()) * 12 + (hoje.getMonth() - inicio.getMonth());
-    var anos = Math.floor(meses / 12);
-    var mesesRestantes = meses % 12;
-    var texto = anos + (anos === 1 ? ' ano' : ' anos');
-    if (mesesRestantes > 0) {
-        texto += ' e ' + mesesRestantes + (mesesRestantes === 1 ? ' mês' : ' meses');
-    }
-    document.getElementById('stat-uptime').textContent = texto;
 })();
 </script>
 
