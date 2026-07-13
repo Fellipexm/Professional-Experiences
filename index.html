@@ -1,120 +1,209 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minhas Experiências Profissionais</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Assets/pngwing.com.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minhas Experiências Profissionais</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="Assets/pngwing.com.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Minhas Experiências Profissionais</h1>
+<a href="https://fellipe.vercel.app/" class="voltar" aria-label="Voltar para o site principal">
+    <img src="Assets/Seta.png" alt="">
+    <span>voltar</span>
+</a>
+
+<header class="topo">
+    <div class="topo__tag">LOG&nbsp;DE&nbsp;INFRAESTRUTURA</div>
+    <h1 class="topo__titulo">Minhas Experiências Profissionais</h1>
+    <p class="topo__subtitulo">Trajetória em redes, infraestrutura e segurança da informação — organizada como um histórico de rede, do nó mais antigo ao status atual.</p>
+
+    <div class="topo__stats">
+        <div class="stat">
+            <span class="stat__label">nós registrados</span>
+            <span class="stat__valor" id="stat-nos">04</span>
+        </div>
+        <div class="stat">
+            <span class="stat__label">tempo em operação</span>
+            <span class="stat__valor" id="stat-uptime">—</span>
+        </div>
+        <div class="stat">
+            <span class="stat__label">status atual</span>
+            <span class="stat__valor stat__valor--online">ONLINE</span>
+        </div>
+    </div>
 </header>
 
-<div class="experiencias">
+<main class="rede" id="rede">
 
     <!-- Grupo Prontomed -->
-    <div class="experiencia" style="background-color: #f0fff0;">
-        <img class="logo" src="Assets/Prontomed.jpg" alt="Logo Grupo Prontomed">
-        <div>
-            <div class="empresa">Grupo Prontomed Planos de Saúde</div>
-            <div class="cargo">Analista de Infraestrutura e Segurança da Informação</div>
-            <div class="periodo">Junho de 2025 até o atual momento</div>
-            <div class="funcoes">
-                <strong>Funções:</strong>
-                <ul>
-                    <li>Implantação de sistemas de monitoramento e inventário (OCS Inventory, GLPI).</li>
-                    <li>Estruturação e implementação de redes corporativas e diagramas de topologia.</li>
-                    <li>Desenvolvimento de políticas de segurança TI e OT, garantindo integridade, confidencialidade e disponibilidade.</li>
-                    <li>Comunicação entre bases de dados locais e em nuvem, com foco em segurança e desempenho.</li>
-                    <li>Monitoramento de redes, servidores e firewalls (Zabbix, Nagios e PFSense).</li>
-                    <li>Instalação de redes LAN/WAN e gerenciamento de servidores, switches, firewalls, Active Directory e VMware.</li>
-                    <li>Atualizações de sistemas, diagnóstico de falhas e execução de soluções.</li>
-                    <li>Gestão de caixas de e-mail corporativas e ferramentas de comunicação.</li>
-                    <li>Monitoramento de backups em nuvem (Virtos) e migração de serviços para AWS, Azure e Google Cloud.</li>
-                    <li>Implementação e monitoramento de firewalls de nova geração e políticas de segurança.</li>
-                    <li>Implantação de governança de TI, controle de acessos e políticas de uso aceitável, garantindo conformidade com LGPD.</li>
-                    <li>Monitoramento de acessos privilegiados e segregação de funções críticas.</li>
-                    <li>Apoio na definição de normas e procedimentos de segurança da informação.</li>
-                    <li>Gestão do ciclo de vida dos ativos de TI com foco em riscos, conformidade e eficiência operacional.</li>
+    <article class="no no--online" data-periodo-inicio="2025-06">
+        <div class="no__trilho">
+            <span class="no__ponto"></span>
+        </div>
+        <div class="no__card">
+            <button class="no__cabecalho" aria-expanded="true">
+                <img class="no__logo" src="Assets/Prontomed.jpg" alt="" onerror="this.style.display='none'">
+                <div class="no__identidade">
+                    <div class="no__empresa">Grupo Prontomed Planos de Saúde</div>
+                    <div class="no__cargo">Analista de Infraestrutura e Segurança da Informação</div>
+                </div>
+                <div class="no__meta">
+                    <span class="no__periodo">jun/2025 — atual</span>
+                    <span class="no__badge no__badge--online">online</span>
+                    <svg class="no__chevron" viewBox="0 0 20 20" fill="none" width="18" height="18"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+            </button>
+            <div class="no__corpo">
+                <ul class="no__lista">
+                    <li>Implantação de sistemas de monitoramento e inventário (OCS Inventory, GLPI)</li>
+                    <li>Estruturação de redes corporativas e diagramas de topologia</li>
+                    <li>Desenvolvimento de políticas de segurança TI e OT (integridade, confidencialidade e disponibilidade)</li>
+                    <li>Comunicação entre bases de dados locais e em nuvem, com foco em segurança e desempenho</li>
+                    <li>Monitoramento de redes, servidores e firewalls (Zabbix, Nagios, PFSense)</li>
+                    <li>Instalação de redes LAN/WAN e gerenciamento de servidores, switches, firewalls, Active Directory e VMware</li>
+                    <li>Atualizações de sistemas, diagnóstico de falhas e execução de soluções</li>
+                    <li>Gestão de caixas de e-mail corporativas e ferramentas de comunicação</li>
+                    <li>Monitoramento de backups em nuvem (Virtos) e migração de serviços para AWS, Azure e Google Cloud</li>
+                    <li>Implementação e monitoramento de firewalls de nova geração</li>
+                    <li>Governança de TI, controle de acessos e políticas de uso aceitável, com conformidade à LGPD</li>
+                    <li>Monitoramento de acessos privilegiados e segregação de funções críticas</li>
+                    <li>Apoio na definição de normas e procedimentos de segurança da informação</li>
+                    <li>Gestão do ciclo de vida dos ativos de TI, com foco em riscos, conformidade e eficiência operacional</li>
                 </ul>
             </div>
         </div>
-    </div>
+    </article>
 
     <!-- Inovação Tecnologia -->
-    <div class="experiencia" style="background-color: #f0fff0;">
-        <img class="logo" src="Assets/inovaçao.jfif" alt="Logo Inovação Tecnologia">
-        <div>
-            <div class="empresa">Inovação Tecnologia</div>
-            <div class="cargo">Analista de Sistema Jr.</div>
-            <div class="periodo">Maio 2024 - Junho 2025</div>
-            <div class="funcoes">
-                <strong>Funções:</strong>
-                <ul>
+    <article class="no" data-periodo-inicio="2024-05">
+        <div class="no__trilho">
+            <span class="no__ponto"></span>
+        </div>
+        <div class="no__card">
+            <button class="no__cabecalho" aria-expanded="false">
+                <img class="no__logo" src="Assets/inovaçao.jfif" alt="" onerror="this.style.display='none'">
+                <div class="no__identidade">
+                    <div class="no__empresa">Inovação Tecnologia</div>
+                    <div class="no__cargo">Analista de Sistema Jr.</div>
+                </div>
+                <div class="no__meta">
+                    <span class="no__periodo">mai/2024 — jun/2025</span>
+                    <span class="no__badge">concluído</span>
+                    <svg class="no__chevron" viewBox="0 0 20 20" fill="none" width="18" height="18"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+            </button>
+            <div class="no__corpo">
+                <ul class="no__lista">
                     <li>Treinamento de usuários</li>
                     <li>Suporte técnico</li>
                     <li>Consultas SQL no IBEXPERT</li>
                     <li>Relatórios no ISQL</li>
-                    <li>Montagem e Modelagem de Banco de Dados</li>
-                    <li>Sistema em Nuvem - Plataforma EVEO</li>
-                    <li>Conhecimento em Lógica Contábil/Fiscal</li>
+                    <li>Montagem e modelagem de banco de dados</li>
+                    <li>Sistema em nuvem — plataforma EVEO</li>
+                    <li>Conhecimento em lógica contábil/fiscal</li>
                 </ul>
             </div>
         </div>
-    </div>
+    </article>
 
     <!-- BYSERVER CLOUD -->
-    <div class="experiencia" style="background-color: #f5f5dc;">
-        <img class="logo" src="Assets/BYServer.png" alt="Logo BYSERVER CLOUD">
-        <div>
-            <div class="empresa">BYSERVER CLOUD</div>
-            <div class="cargo">Estagiário de Analista de Redes</div>
-            <div class="periodo">Outubro 2023 - Fevereiro 2024</div>
-            <div class="funcoes">
-                <strong>Funções:</strong>
-                <ul>
+    <article class="no" data-periodo-inicio="2023-10">
+        <div class="no__trilho">
+            <span class="no__ponto"></span>
+        </div>
+        <div class="no__card">
+            <button class="no__cabecalho" aria-expanded="false">
+                <img class="no__logo" src="Assets/BYServer.png" alt="" onerror="this.style.display='none'">
+                <div class="no__identidade">
+                    <div class="no__empresa">BYSERVER CLOUD</div>
+                    <div class="no__cargo">Estagiário de Analista de Redes</div>
+                </div>
+                <div class="no__meta">
+                    <span class="no__periodo">out/2023 — fev/2024</span>
+                    <span class="no__badge">concluído</span>
+                    <svg class="no__chevron" viewBox="0 0 20 20" fill="none" width="18" height="18"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+            </button>
+            <div class="no__corpo">
+                <ul class="no__lista">
                     <li>Suporte técnico de primeiro nível</li>
                     <li>Monitoramento de servidores e redes</li>
                     <li>Configuração de sistemas operacionais</li>
                     <li>Análise de logs e diagnóstico de falhas</li>
                     <li>Acompanhamento e resposta a incidentes de rede em tempo real</li>
-                    <li>Utilização de ferramentas de monitoramento - Nagios</li>
+                    <li>Utilização de ferramentas de monitoramento (Nagios)</li>
                     <li>Implementação de políticas de segurança de rede (firewalls, VPNs, IDS/IPS)</li>
                     <li>Gerenciamento de IPs e sub-redes</li>
                 </ul>
             </div>
         </div>
-    </div>
+    </article>
 
     <!-- TeleTécnico -->
-    <div class="experiencia" style="background-color: #f0fff0;">
-        <img class="logo" src="Assets/teletecnico.png" alt="Logo TeleTécnico Informática Divinópolis">
-        <div>
-            <div class="empresa">TeleTécnico Informática Divinópolis</div>
-            <div class="cargo">Estagiário de Técnico em Hardware</div>
-            <div class="periodo">Junho 2023 - Setembro de 2023</div>
-            <div class="funcoes">
-                <strong>Funções:</strong>
-                <ul>
+    <article class="no" data-periodo-inicio="2023-06">
+        <div class="no__trilho no__trilho--fim">
+            <span class="no__ponto"></span>
+        </div>
+        <div class="no__card">
+            <button class="no__cabecalho" aria-expanded="false">
+                <img class="no__logo" src="Assets/teletecnico.png" alt="" onerror="this.style.display='none'">
+                <div class="no__identidade">
+                    <div class="no__empresa">TeleTécnico Informática Divinópolis</div>
+                    <div class="no__cargo">Estagiário de Técnico em Hardware</div>
+                </div>
+                <div class="no__meta">
+                    <span class="no__periodo">jun/2023 — set/2023</span>
+                    <span class="no__badge">concluído</span>
+                    <svg class="no__chevron" viewBox="0 0 20 20" fill="none" width="18" height="18"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+            </button>
+            <div class="no__corpo">
+                <ul class="no__lista">
                     <li>Montagem e manutenção de computadores</li>
                     <li>Diagnóstico de falhas de hardware</li>
                     <li>Instalação de softwares</li>
                     <li>Atualização de hardware para melhorar desempenho</li>
                     <li>Identificação de falhas em componentes de hardware</li>
-                    <li>Utilização de ferramentas de diagnóstico para verificar o estado e desempenho do hardware</li>
+                    <li>Utilização de ferramentas de diagnóstico para verificar estado e desempenho do hardware</li>
                 </ul>
             </div>
         </div>
-    </div>
+    </article>
 
-</div>
+</main>
 
-<a href="https://fellipe.vercel.app/">
-    <img src="Assets/Seta.png" id="seta" alt="Ir para site">
-</a>
+<footer class="rodape">
+    <span>origem do log: jun/2023</span>
+</footer>
+
+<script>
+(function () {
+    // Toggle de nós — expandir/recolher (o nó "online" já inicia aberto)
+    document.querySelectorAll('.no__cabecalho').forEach(function (botao) {
+        botao.addEventListener('click', function () {
+            var aberto = botao.getAttribute('aria-expanded') === 'true';
+            botao.setAttribute('aria-expanded', String(!aberto));
+        });
+    });
+
+    // Uptime calculado a partir do nó mais antigo até hoje
+    var inicio = new Date(2023, 5, 1); // junho/2023
+    var hoje = new Date();
+    var meses = (hoje.getFullYear() - inicio.getFullYear()) * 12 + (hoje.getMonth() - inicio.getMonth());
+    var anos = Math.floor(meses / 12);
+    var mesesRestantes = meses % 12;
+    var texto = anos + (anos === 1 ? ' ano' : ' anos');
+    if (mesesRestantes > 0) {
+        texto += ' e ' + mesesRestantes + (mesesRestantes === 1 ? ' mês' : ' meses');
+    }
+    document.getElementById('stat-uptime').textContent = texto;
+})();
+</script>
 
 </body>
 </html>
